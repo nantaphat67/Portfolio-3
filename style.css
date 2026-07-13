@@ -1193,3 +1193,33 @@ color:#18241C;
 
 }
 ```
+```css
+/*==========================================
+CURSOR
+==========================================*/
+
+.cursor{
+
+position:fixed;
+
+width:25px;
+
+height:25px;
+
+border-radius:50%;
+
+background:#4F7942;
+
+pointer-events:none;
+
+transform:translate(-50%,-50%);
+
+box-shadow:0 0 25px #4F7942;
+
+z-index:9999;
+
+transition:
+transform .08s linear;
+
+}
+```
