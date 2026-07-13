@@ -127,4 +127,35 @@ window.addEventListener("scroll",()=>{
 
 });
 ```
+```javascript
+/*==========================================
+Scroll Reveal
+==========================================*/
+
+const revealElements = document.querySelectorAll(
+".hero,.about,.skills,.works,.contact,.title,.work-card,.contact-card"
+);
+
+function reveal(){
+
+    revealElements.forEach(el=>{
+
+        const top = el.getBoundingClientRect().top;
+
+        const windowHeight = window.innerHeight;
+
+        if(top < windowHeight-100){
+
+            el.classList.add("show");
+
+        }
+
+    });
+
+}
+
+window.addEventListener("scroll",reveal);
+
+reveal();
+```
 
