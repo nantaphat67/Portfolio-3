@@ -1114,3 +1114,33 @@ box-shadow:0 0 20px rgba(212,175,55,.6);
 
 }
 ```
+```css
+/*==========================================
+SCROLL REVEAL
+==========================================*/
+
+.hero,
+.about,
+.skills,
+.works,
+.contact,
+.title,
+.work-card,
+.contact-card{
+
+opacity:0;
+
+transform:translateY(80px);
+
+transition:1s ease;
+
+}
+
+.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+```
