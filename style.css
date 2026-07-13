@@ -1339,3 +1339,42 @@ opacity:0;
 
 }
 ```
+```css
+.counter{
+
+width:90%;
+
+max-width:1000px;
+
+margin:100px auto;
+
+display:flex;
+
+justify-content:space-around;
+
+text-align:center;
+
+flex-wrap:wrap;
+
+gap:30px;
+
+}
+
+.counter h2{
+
+font-size:60px;
+
+color:var(--gold);
+
+font-family:'Bebas Neue',sans-serif;
+
+}
+
+.counter p{
+
+color:#ccc;
+
+font-size:18px;
+
+}
+```
