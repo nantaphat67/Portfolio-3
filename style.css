@@ -1103,3 +1103,14 @@ grid-template-columns:1fr;
 
 }
 ```
+```css
+nav a.active{
+
+background:var(--gold);
+
+color:#18241C;
+
+box-shadow:0 0 20px rgba(212,175,55,.6);
+
+}
+```
