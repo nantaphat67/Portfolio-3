@@ -239,4 +239,41 @@ circle.remove();
 
 });
 ```
+```javascript
+/*==========================================
+COUNTER
+==========================================*/
+
+const counters=document.querySelectorAll(".count");
+
+counters.forEach(counter=>{
+
+const update=()=>{
+
+const target=+counter.dataset.target;
+
+const value=+counter.innerText;
+
+const speed=80;
+
+const increment=Math.ceil(target/speed);
+
+if(value<target){
+
+counter.innerText=value+increment;
+
+setTimeout(update,20);
+
+}else{
+
+counter.innerText=target;
+
+}
+
+};
+
+update();
+
+});
+```
 
