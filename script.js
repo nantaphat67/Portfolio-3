@@ -206,4 +206,37 @@ cursor.style.top=e.clientY+"px";
 
 });
 ```
+```javascript
+/*==========================================
+BUTTON RIPPLE
+==========================================*/
+
+document.querySelectorAll(".btn,.btn2").forEach(button=>{
+
+button.addEventListener("click",function(e){
+
+const circle=document.createElement("span");
+
+const size=Math.max(this.clientWidth,this.clientHeight);
+
+circle.style.width=size+"px";
+circle.style.height=size+"px";
+
+circle.style.left=e.offsetX-size/2+"px";
+circle.style.top=e.offsetY-size/2+"px";
+
+circle.classList.add("ripple");
+
+this.appendChild(circle);
+
+setTimeout(()=>{
+
+circle.remove();
+
+},600);
+
+});
+
+});
+```
 
